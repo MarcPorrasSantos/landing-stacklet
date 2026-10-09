@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stacklet Labs — Modular Microapps & AI Automation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: rgba(255, 255, 255, 0.03);
+      --border: rgba(255, 255, 255, 0.08);
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --primary: #6366f1;
+      --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .logo-badge {
+      width: 10px;
+      height: 10px;
+      background: var(--primary-gradient);
+      border-radius: 50%;
+    }
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 5rem 1.5rem;
+      text-align: center;
+    }
+    .tag {
+      display: inline-block;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      background: rgba(99, 102, 241, 0.12);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      color: #818cf8;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 1.5rem;
+    }
+    .gradient-text {
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.subtitle {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto 3rem auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      text-align: left;
+      margin-top: 2rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.75rem;
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: 2.2rem; }
+      p.subtitle { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span class="logo-badge"></span>
+      Stacklet Labs
+    </div>
+    <span style="font-size: 0.85rem; color: var(--text-muted);">v0.2 Private Beta</span>
+  </header>
+
+  <main>
+    <span class="tag">Next-Gen Intelligent Microapps</span>
+    <h1>Building intelligent, modular workflows on <span class="gradient-text">Claude AI</span></h1>
+    <p class="subtitle">
+      Stacklet Labs provides lightweight microapplication infrastructure designed to decouple complex processes, orchestrate LLM agents, and streamline operational productivity.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Modular Microapps</h3>
+        <p>Decoupled interfaces engineered for single-purpose workflows with low-latency tool execution.</p>
+      </div>
+      <div class="card">
+        <h3>Autonomous Orchestration</h3>
+        <p>Dynamic agentic execution pipelines powered by Anthropic's Claude API infrastructure.</p>
+      </div>
+      <div class="card">
+        <h3>Enterprise Connectivity</h3>
+        <p>Seamless data pipelines and API-first architectures built for modern developer teams.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Stacklet Labs Inc. All rights reserved.
+  </footer>
+</body>
+</html>
